@@ -7,7 +7,8 @@ const defaultState = fromJS({
     articleList: [],
     recommendList: [],
     recommendWrite: [],
-    articlePage: 1
+    articlePage: 1,
+    scrollShow: false
 })
 export  default (state = defaultState,action) => {
 
@@ -27,6 +28,8 @@ export  default (state = defaultState,action) => {
                 'articleList': state.get('articleList').concat(action.list),
                 'articlePage': action.page
             })
+        case 'toggle_scroll_top':
+            return state.set('scrollShow',action.show)
         default :
             return state;
     }

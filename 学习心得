@@ -1,0 +1,2 @@
+- 在使用`PureComponent`时建议使用`immutable`类型的store，不然会出现很多坑。如果不使用，建议使用原来的`Component`，然后自己手写`shouldComponentUpdate`
+- 多拆分，模块化思维

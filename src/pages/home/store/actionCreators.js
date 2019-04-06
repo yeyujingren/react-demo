@@ -21,6 +21,8 @@ export const getHomeInfo = () => {
             const result = res.data;
             dispatch(changeHomeDate(result));
             // console.log(result)
+        }).catch( (e) => {
+            console.log('error:'+ e)
         })
     }
 }
@@ -34,6 +36,13 @@ export const getMoreList = (page) => {
             dispatch(addHomeList(result,page + 1))
             // dispatch(changeHomeDate(result));
             // console.log(result)
+        }).catch( (e) => {
+            console.log('error:'+ e)
         })
     }
 } 
+
+export const toggleTopShow = (show) => ({
+    type: 'toggle_scroll_top',
+    show: show
+})
