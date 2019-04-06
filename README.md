@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 项目介绍：
+使用react+redux+axios模拟简书网站首页开发。
 
 ## Available Scripts
 
